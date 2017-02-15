@@ -1,3 +1,6 @@
+#更新内容
+目的:为配合hexo-theme-material主题的使用，现将在文章编辑页面添加一条属性：  
+thumbnail：缩略图地址
 # hexo-hey
 an admin plugin for hexo, support hexo v3.x  
 built with gulp + babel + webpack  
