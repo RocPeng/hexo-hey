@@ -21,6 +21,7 @@ let PostEditModule = angular
             slug: 'untitled-' + Date.now(),
             date: $filter('date')(new Date(), 'yyyy-MM-dd HH:mm:ss'),
             tags: [],
+            thumbnail: '',
             categories: []
           };
         }

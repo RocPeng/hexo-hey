@@ -38,7 +38,8 @@ function router(api, hexo) {
         published: post.published,
         categories: post.categories.toArray().map(category => category.name),
         tags: post.tags.toArray().map(tag => tag.name),
-        date: post.date
+        date: post.date,
+        thumbnail: post.thumbnail
       };
     });
     res.json(posts);
@@ -63,6 +64,7 @@ function router(api, hexo) {
       categories: post.categories.toArray().map(category => category.name),
       tags: post.tags.toArray().map(tag => tag.name),
       date: post.date,
+      thumbnail: post.thumbnail,
       excerpt: post.excerpt
     };
     res.json(post);
@@ -87,6 +89,7 @@ function router(api, hexo) {
       layout: req.body.layout,
       date: req.body.date,
       categories: req.body.categories,
+      thumbnail: req.body.thumbnail,
       tags: req.body.tags,
     };
     hexo.post.create(post).then(data => {
@@ -106,6 +109,7 @@ function router(api, hexo) {
           categories: post.categories.toArray().map(category => category.name),
           tags: post.tags.toArray().map(tag => tag.name),
           date: post.date,
+          thumbnail: post.thumbnail,
           excerpt: post.excerpt
         };
         res.json(post);

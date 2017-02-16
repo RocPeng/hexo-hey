@@ -1,6 +1,10 @@
 #更新内容
 目的:为配合hexo-theme-material主题的使用，现将在文章编辑页面添加一条属性：  
-thumbnail：缩略图地址
+thumbnail：缩略图地址  
+2017-02-16 16:28:00更新内容：编辑中增加缩略图地址编辑功能，出现问题：gulp自动  
+打包后无法生成src/api/api.js和index.js两个文件，只好手动修改通过npm安装后的  
+hexo下node_modlues/hexo-hey的api.js和index.js
+
 # hexo-hey
 an admin plugin for hexo, support hexo v3.x  
 built with gulp + babel + webpack  
