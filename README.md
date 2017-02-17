@@ -1,14 +1,16 @@
 #写在前面
 感谢原项目开发者，本工程是原作者项目fork过来的，原作者已经1年多没有更新过项目，  
-因此一些库的依赖已升级版本，本工程是在原作者基础上增添一些实用功能。
+因此一些库的依赖已升级版本，本工程是在原作者基础上增添一些实用功能。  
+项目地址：https://github.com/RocPeng/hexo-hey/
 #更新内容
 目的:为配合hexo-theme-material主题的使用，现将在文章编辑页面添加一条属性：  
 thumbnail：缩略图地址  
-2017-02-16 16:28:00更新内容：编辑中增加缩略图地址编辑功能，出现问题：gulp自动  
-打包后无法生成src/api/api.js和index.js两个文件，只好手动修改通过npm安装后的  
-hexo下node_modlues/hexo-hey的api.js和index.js  
-2017-02-17 13:43:55更新内容：问题已解决，依赖库版本问题
-
+###2017-02-16 16:28:00更新内容  
+编辑中增加缩略图地址编辑功能，出现问题：gulp自动打包后无法生成src/api/api.js  
+和index.js两个文件，只好手动修改通过npm安装后的hexo下node_modlues/hexo-hey  
+的api.js和index.js  
+###2017-02-17 13:43:55更新内容  
+问题已解决，依赖库版本问题，使用npm即可安装
 # hexo-hey
 an admin plugin for hexo, support hexo v3.x  
 built with gulp + babel + webpack  
